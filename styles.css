@@ -134,6 +134,7 @@ section h2 {
 
 section p {
   font-size: 0.95rem; /* Adjusted font size for readability */
+  text-align: justify;
 }
 
 ul {
