@@ -1,4 +1,3 @@
-/* Base Styles (Mobile First) */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,18 +9,18 @@ body {
   background-color: #f5fdf7;
   color: #1f3b2d;
   line-height: 1.6;
-  -webkit-font-smoothing: antialiased; /* Better font rendering */
-  -moz-osx-font-smoothing: grayscale; /* Better font rendering */
+  -webkit-font-smoothing: antialiased; 
+  -moz-osx-font-smoothing: grayscale; 
 }
 
 /* --- Navigation Bar --- */
 nav {
   background-color: #ffffff;
   border-bottom: 1px solid #e0e0e0;
-  padding: 0.8rem 1rem; /* Adjusted padding for mobile */
+  padding: 0.8rem 1rem; 
   display: flex;
-  flex-direction: column; /* Stack items vertically on mobile */
-  align-items: flex-start; /* Align items to the start for better mobile layout */
+  flex-direction: column; 
+  align-items: flex-start;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -30,36 +29,36 @@ nav {
 .nav-left {
   display: flex;
   align-items: center;
-  width: 100%; /* Take full width */
-  margin-bottom: 0.5rem; /* Space below logo/name */
+  width: 100%; 
+  margin-bottom: 0.5rem; 
 }
 
 .nav-left img {
-  height: 40px; /* Slightly smaller logo for mobile */
+  height: 40px; 
   margin-right: 8px;
 }
 
 .nav-left span {
   font-weight: 700;
-  font-size: 1rem; /* Adjusted font size for mobile */
+  font-size: 1rem;
   color: #004d40;
-  flex-grow: 1; /* Allows text to take available space */
+  flex-grow: 1; 
   text-align: left;
 }
 
 .nav-links {
-  width: 100%; /* Take full width */
-  text-align: center; /* Center navigation links */
+  width: 100%; 
+  text-align: center;
 }
 
 .nav-links a {
   color: #004d40;
   text-decoration: none;
   font-weight: 600;
-  margin: 0 0.5rem; /* Adjusted horizontal margin for mobile */
-  font-size: 0.85rem; /* Smaller font size for mobile links */
-  display: inline-block; /* Allows vertical stacking if needed, but keeps horizontal flow */
-  padding: 0.3rem 0; /* Add padding for touch targets */
+  margin: 0 0.5rem; 
+  font-size: 0.85rem; 
+  display: inline-block;
+  padding: 0.3rem 0; 
 }
 
 .nav-links a:hover {
@@ -69,24 +68,24 @@ nav {
 /* --- Header Section --- */
 header {
   background: linear-gradient(to right, #d0f0c0, #b2dfdb);
-  padding: 1.5rem 1rem; /* Adjusted padding for mobile */
+  padding: 1.5rem 1rem; 
   text-align: center;
 }
 
 header h1 {
-  font-size: 1.8rem; /* Adjusted font size for mobile */
+  font-size: 1.8rem; 
   margin-bottom: 0.5rem;
 }
 
 header p {
-  font-size: 1rem; /* Adjusted font size for mobile */
+  font-size: 1rem; 
   margin-bottom: 1rem;
 }
 
 .cta-buttons {
   display: flex;
-  flex-direction: column; /* Stack buttons vertically on mobile */
-  gap: 0.8rem; /* Space between stacked buttons */
+  flex-direction: column;
+  gap: 0.8rem;
   margin-top: 1rem;
 }
 
@@ -94,13 +93,13 @@ header p {
   background-color: #2e7d32;
   color: white;
   border: none;
-  padding: 0.7rem 1.2rem; /* Adjusted padding */
+  padding: 0.7rem 1.2rem;
   border-radius: 8px;
   font-weight: 600;
   cursor: pointer;
-  width: 90%; /* Make buttons wider on mobile */
-  max-width: 300px; /* Limit maximum width */
-  margin: 0 auto; /* Center buttons */
+  width: 90%;
+  max-width: 300px; 
+  margin: 0 auto; 
   transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
 
@@ -111,7 +110,7 @@ header p {
 }
 
 .cta-buttons button:hover {
-  background-color: #1b5e20; /* Darker green on hover */
+  background-color: #1b5e20; 
 }
 
 .cta-buttons button.outline:hover {
@@ -121,37 +120,37 @@ header p {
 
 /* --- General Section Styling --- */
 section {
-  padding: 1.5rem 1rem; /* Adjusted padding for mobile */
+  padding: 1.5rem 1rem; 
   max-width: 900px;
   margin: auto;
 }
 
 section h2 {
-  font-size: 1.5rem; /* Adjusted font size for mobile */
+  font-size: 1.5rem;
   margin-bottom: 0.8rem;
   color: #2e7d32;
 }
 
 section p {
-  font-size: 0.95rem; /* Adjusted font size for readability */
+  font-size: 0.95rem; 
   text-align: justify;
 }
 
 ul {
-  margin-left: 1rem; /* Adjusted margin for mobile */
+  margin-left: 1rem; 
   margin-bottom: 1rem;
-  font-size: 0.95rem; /* Adjusted font size for readability */
+  font-size: 0.95rem; 
 }
 
 ul li {
-  margin-bottom: 0.4rem; /* Spacing for list items */
+  margin-bottom: 0.4rem; 
 }
 
 /* --- Grid Layout (How to Apply) --- */
 .grid {
-  display: flex; /* Change to flexbox for easy stacking on mobile */
-  flex-direction: column; /* Stack cards vertically */
-  gap: 1rem; /* Adjusted gap */
+  display: flex; 
+  flex-direction: column;
+  gap: 1rem; 
 }
 
 .card {
@@ -159,35 +158,35 @@ ul li {
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  font-size: 0.95rem; /* Adjusted font size */
+  font-size: 0.95rem;
 }
 
 .card ul {
-  margin-left: 1rem; /* Indent lists within cards */
+  margin-left: 1rem; 
   margin-top: 0.5rem;
   margin-bottom: 0;
 }
 
 .card ul li {
   margin-bottom: 0.2rem;
-  font-size: 0.9rem; /* Smaller font for nested lists */
+  font-size: 0.9rem; 
 }
 
 /* --- Footer --- */
 footer {
   background-color: #e0f2f1;
   text-align: center;
-  padding: 0.8rem; /* Adjusted padding */
-  font-size: 0.8rem; /* Adjusted font size for mobile */
+  padding: 0.8rem; 
+  font-size: 0.8rem; 
 }
 
 /* --- Carousel Styles --- */
 .carousel {
   position: relative;
-  max-width: 100%; /* Ensure it fits within parent */
+  max-width: 100%;
   overflow: hidden;
   border-radius: 10px;
-  margin-bottom: 1rem; /* Adjusted margin */
+  margin-bottom: 1rem;
 }
 
 .carousel-slide {
@@ -198,13 +197,13 @@ footer {
   left: 0;
   width: 100%;
   height: auto;
-  object-fit: cover; /* Use cover to ensure images fill the space without distortion */
-  display: block; /* Ensure images are initially block elements */
+  object-fit: cover; 
+  display: block; 
 }
 
 .carousel-slide.active {
   opacity: 1;
-  position: relative; /* Active slide takes up space */
+  position: relative; 
   z-index: 1;
 }
 
@@ -212,14 +211,14 @@ footer {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.4); /* Slightly lighter overlay for buttons */
+  background-color: rgba(0, 0, 0, 0.4); 
   color: white;
   border: none;
-  padding: 8px; /* Smaller padding for mobile buttons */
+  padding: 8px;
   cursor: pointer;
-  font-size: 1.2rem; /* Smaller font for buttons */
+  font-size: 1.2rem; 
   z-index: 2;
-  border-radius: 5px; /* Rounded corners for buttons */
+  border-radius: 5px; 
   transition: background-color 0.3s ease;
 }
 
@@ -228,23 +227,23 @@ footer {
 }
 
 .carousel-button.left {
-  left: 5px; /* Closer to edge for mobile */
+  left: 5px; 
 }
 
 .carousel-button.right {
-  right: 5px; /* Closer to edge for mobile */
+  right: 5px;
 }
 
 /* --- Scroll Animation Styles --- */
 .animate {
   opacity: 0;
-  transform: translateY(20px); /* Use translateY for general slide-up effect */
+  transform: translateY(20px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .animate.slide-in-left,
-.animate.slide-in-right { /* Unified animation for simplicity on mobile */
-  transform: translateX(0); /* Start at 0 on mobile, will animate from 20px Y */
+.animate.slide-in-right { 
+  transform: translateX(0); 
 }
 
 .animate.visible {
@@ -257,24 +256,24 @@ footer {
 @media (min-width: 768px) {
   /* Navigation Bar */
   nav {
-    flex-direction: row; /* Back to horizontal layout */
+    flex-direction: row; 
     justify-content: space-between;
     padding: 0.5rem 2rem;
     align-items: center;
   }
 
   .nav-left {
-    width: auto; /* Allow content to dictate width */
+    width: auto; 
     margin-bottom: 0;
   }
 
   .nav-left img {
-    height: 50px; /* Original size */
+    height: 50px;
     margin-right: 10px;
   }
 
   .nav-left span {
-    font-size: 1.2rem; /* Original size */
+    font-size: 1.2rem; 
   }
 
   .nav-links {
@@ -283,9 +282,9 @@ footer {
   }
 
   .nav-links a {
-    margin-left: 1rem; /* Original margin */
-    font-size: 0.95rem; /* Original font size */
-    padding: 0; /* Remove padding for desktop links */
+    margin-left: 1rem; 
+    font-size: 0.95rem; 
+    padding: 0; 
   }
 
   /* Header Section */
@@ -294,24 +293,24 @@ footer {
   }
 
   header h1 {
-    font-size: 2.5rem; /* Original size */
+    font-size: 2.5rem; 
   }
 
   header p {
-    font-size: 1.2rem; /* Original size */
+    font-size: 1.2rem; 
   }
 
   .cta-buttons {
-    flex-direction: row; /* Buttons side-by-side */
-    gap: 0.5rem; /* Original gap */
+    flex-direction: row; 
+    gap: 0.5rem; 
     margin-top: 1.5rem;
     justify-content: center;
   }
 
   .cta-buttons button {
-    width: auto; /* Auto width */
-    max-width: none; /* No max width limitation */
-    margin: 0 0.5rem; /* Original margin */
+    width: auto; 
+    max-width: none; 
+    margin: 0 0.5rem;
   }
 
   /* General Section Styling */
@@ -320,13 +319,13 @@ footer {
   }
 
   section h2 {
-    font-size: 2.5rem; /* Original size */
+    font-size: 2.5rem;
   }
 
   ul {
-    margin-left: 1.5rem; /* Original margin */
+    margin-left: 1.5rem;
     margin-bottom: 1.5rem;
-    font-size: 1rem; /* Original font size */
+    font-size: 1rem; 
   }
 
   ul li {
@@ -335,13 +334,13 @@ footer {
 
   /* Grid Layout (How to Apply) */
   .grid {
-    display: grid; /* Back to grid layout */
+    display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem; /* Original gap */
+    gap: 1.5rem; 
   }
 
   .card {
-    font-size: 1rem; /* Original font size */
+    font-size: 1rem;
   }
 
   .card ul {
@@ -349,13 +348,13 @@ footer {
   }
 
   .card ul li {
-    font-size: 0.95rem; /* Original font size for nested lists */
+    font-size: 0.95rem; 
   }
 
   /* Footer */
   footer {
     padding: 1rem;
-    font-size: 0.9rem; /* Original font size */
+    font-size: 0.9rem;
   }
 
   /* Carousel Styles */
@@ -364,28 +363,28 @@ footer {
   }
 
   .carousel-button {
-    padding: 10px; /* Original padding */
-    font-size: 1.5rem; /* Original font size */
+    padding: 10px;
+    font-size: 1.5rem;
   }
 
   .carousel-button.left {
-    left: 10px; /* Original position */
+    left: 10px;
   }
 
   .carousel-button.right {
-    right: 10px; /* Original position */
+    right: 10px;
   }
 
   /* Scroll Animation Styles */
-  .animate.slide-in-left { /* Re-enable specific slide-in for desktop */
+  .animate.slide-in-left {
     transform: translateX(-100px);
   }
 
-  .animate.slide-in-right { /* Re-enable specific slide-in for desktop */
+  .animate.slide-in-right {
     transform: translateX(100px);
   }
 
-  .animate.visible { /* General visible state */
+  .animate.visible {
     transform: translateX(0);
     opacity: 1;
   }
