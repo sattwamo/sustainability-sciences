@@ -1,9 +1,9 @@
 let currentSlide = 0;
-const slides = document.querySelectorAll('.carousel-slide');
+const slides = document.querySelectorAll(".carousel-slide");
 
 function showSlide(index) {
   slides.forEach((slide, i) => {
-    slide.classList.toggle('active', i === index);
+    slide.classList.toggle("active", i === index);
   });
 }
 
@@ -17,23 +17,26 @@ function prevSlide() {
   showSlide(currentSlide);
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   showSlide(currentSlide);
   setInterval(nextSlide, 4000);
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      } else {
-        entry.target.classList.remove('visible');  // <-- allow animation to replay
-      }
-    });
-  }, {
-    threshold: 0.1
-  });
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        } else {
+          entry.target.classList.remove("visible"); // <-- allow animation to replay
+        }
+      });
+    },
+    {
+      threshold: 0.1,
+    }
+  );
 
-  document.querySelectorAll('.animate').forEach(el => {
+  document.querySelectorAll(".animate").forEach((el) => {
     observer.observe(el);
   });
 
